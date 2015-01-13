@@ -13,6 +13,9 @@
 @interface Deck : NSObject
 
 @property() NSMutableArray* _cards;
+@property() NSMutableArray* _discards;
+@property() NSInteger _percentDiscard;
+@property() NSInteger _numberCardInit;
 
 -(id) initWithCards:(NSMutableArray*) cards;
 -(NSUInteger) getNumberCards;

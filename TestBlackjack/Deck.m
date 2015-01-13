@@ -13,9 +13,13 @@
 -(id) initWithCards:(NSMutableArray*) cards
 {
     self._cards = [[NSMutableArray alloc] init];
-    
     [self._cards addObjectsFromArray:cards];
     [self shuffle];
+    
+    self._discards = [[NSMutableArray alloc] init];
+    
+    self._percentDiscard = 25;
+    self._numberCardInit = [self getNumberCards];
     
     return self;
 }
@@ -30,7 +34,13 @@
     if ([self._cards count] > 0)
     {
         Card* c = [self._cards lastObject];
+        [self._discards addObject:c];
         [self._cards removeLastObject];
+        
+        NSInteger current_percent = (NSInteger) ([self getNumberCards] / self._numberCardInit) * 100;
+        if ( current_percent <= self._percentDiscard)
+            [self._cards addObjectsFromArray:self._discards];
+        
         return c;
     }
     
