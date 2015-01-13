@@ -14,6 +14,9 @@
 		EE2BD9A71A614AB700A76379 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2BD9A61A614AB700A76379 /* Images.xcassets */; };
 		EE2BD9AA1A614AB700A76379 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2BD9A81A614AB700A76379 /* LaunchScreen.xib */; };
 		EE2BD9B61A614AB700A76379 /* TestBlackjackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BD9B51A614AB700A76379 /* TestBlackjackTests.m */; };
+		EE3233BF1A65A4F000DAC070 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3233BE1A65A4F000DAC070 /* Deck.m */; };
+		EE3233C21A65B61600DAC070 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3233C11A65B61600DAC070 /* Hand.m */; };
+		EEEE6EBA1A614CA20003FDDD /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEE6EB91A614CA20003FDDD /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		EE2BD9AF1A614AB700A76379 /* TestBlackjackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBlackjackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2BD9B41A614AB700A76379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE2BD9B51A614AB700A76379 /* TestBlackjackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlackjackTests.m; sourceTree = "<group>"; };
+		EE3233BD1A65A4F000DAC070 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		EE3233BE1A65A4F000DAC070 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		EE3233C01A65B61600DAC070 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		EE3233C11A65B61600DAC070 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		EEEE6EB81A614CA20003FDDD /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		EEEE6EB91A614CA20003FDDD /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				EE2BD9A61A614AB700A76379 /* Images.xcassets */,
 				EE2BD9A81A614AB700A76379 /* LaunchScreen.xib */,
 				EE2BD9991A614AB700A76379 /* Supporting Files */,
+				EEEE6EB81A614CA20003FDDD /* Card.h */,
+				EEEE6EB91A614CA20003FDDD /* Card.m */,
+				EE3233BD1A65A4F000DAC070 /* Deck.h */,
+				EE3233BE1A65A4F000DAC070 /* Deck.m */,
+				EE3233C01A65B61600DAC070 /* Hand.h */,
+				EE3233C11A65B61600DAC070 /* Hand.m */,
 			);
 			path = TestBlackjack;
 			sourceTree = "<group>";
@@ -219,9 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3233C21A65B61600DAC070 /* Hand.m in Sources */,
+				EE3233BF1A65A4F000DAC070 /* Deck.m in Sources */,
 				EE2BD9A21A614AB700A76379 /* ViewController.m in Sources */,
 				EE2BD99F1A614AB700A76379 /* AppDelegate.m in Sources */,
 				EE2BD99C1A614AB700A76379 /* main.m in Sources */,
+				EEEE6EBA1A614CA20003FDDD /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +430,7 @@
 				EE2BD9BB1A614AB700A76379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE2BD9BC1A614AB700A76379 /* Build configuration list for PBXNativeTarget "TestBlackjackTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +439,7 @@
 				EE2BD9BE1A614AB700A76379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
